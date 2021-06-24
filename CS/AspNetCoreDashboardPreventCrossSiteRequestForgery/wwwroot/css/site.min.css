@@ -1,7 +1,7 @@
 /**
 * DevExtreme (dx.common.css)
-* Version: 21.1.4
-* Build date: Mon Jun 21 2021
+* Version: 21.1.3
+* Build date: Tue May 18 2021
 *
 * Copyright (c) 2012 - 2021 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -13,8 +13,8 @@ It is no longer required.
 @charset "UTF-8";
 /**
 * DevExtreme (dx.light.css)
-* Version: 21.1.4
-* Build date: Mon Jun 21 2021
+* Version: 21.1.3
+* Build date: Tue May 18 2021
 *
 * Copyright (c) 2012 - 2021 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -7101,14 +7101,14 @@ It is no longer required.
   padding: 3px 5px 7px;
 }
 .dx-menu-base .dx-menu-item-content .dx-menu-item-text {
-  padding: 3px 25px 5px 23px;
+  padding: 0 25px 5px 23px;
 }
 .dx-menu-base .dx-menu-item-content .dx-menu-item-popout {
   min-width: 7px;
   min-height: 7px;
 }
 .dx-menu-base.dx-rtl .dx-menu-item-content .dx-menu-item-text {
-  padding: 3px 23px 5px 25px;
+  padding: 0 23px 5px 25px;
 }
 .dx-menu-base.dx-rtl .dx-menu-item-content .dx-icon {
   margin-left: auto;
@@ -7239,13 +7239,13 @@ It is no longer required.
   margin: 0 19px 0 3px;
 }
 .dx-menu .dx-menu-item-has-text .dx-menu-item-text {
-  padding: 3px 5px 5px;
+  padding: 0 5px 5px;
 }
 .dx-menu .dx-menu-item-has-text.dx-menu-item-has-icon .dx-icon {
   margin: 0 3px;
 }
 .dx-menu .dx-menu-item-has-text.dx-menu-item-has-submenu .dx-menu-item-text {
-  padding: 3px 19px 5px 5px;
+  padding: 0 19px 5px 5px;
 }
 .dx-menu .dx-menu-horizontal .dx-menu-item-popout {
   font: 18px/18px DXIcons;
@@ -7279,10 +7279,10 @@ It is no longer required.
   margin: 0 3px 0 19px;
 }
 .dx-menu.dx-rtl .dx-menu-item-has-text .dx-menu-item-text {
-  padding: 3px 5px 5px 0;
+  padding: 0 5px 5px 0;
 }
 .dx-menu.dx-rtl .dx-menu-item-has-text.dx-menu-item-has-submenu .dx-menu-item-text {
-  padding: 3px 5px 5px 19px;
+  padding: 0 5px 5px 19px;
 }
 .dx-menu-adaptive-mode {
   background-color: #fff;
@@ -15177,7 +15177,7 @@ input.dx-hidden {
   padding: 5px 3px 5px 5px;
 }
 .dx-context-menu.dx-rtl .dx-menu-item-content .dx-menu-item-text {
-  padding: 3px 23px 5px 25px;
+  padding: 0 23px 5px 25px;
 }
 .dx-multiview-wrapper {
   overflow: hidden;
@@ -22684,8 +22684,8 @@ input.dx-hidden {
 }
 /**
 * DevExpress Analytics (dist\css\dx-analytics.common.css)
-* Version:  21.1.4
-* Build date: Jun 22, 2021
+* Version:  21.1.3
+* Build date: May 18, 2021
 * Copyright (c) 2012 - 2021 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/universal.xml
 */
@@ -25167,8 +25167,8 @@ input.dx-hidden {
 
 /**
 * DevExpress Analytics (dist\css\dx-analytics.light.css)
-* Version:  21.1.4
-* Build date: Jun 22, 2021
+* Version:  21.1.3
+* Build date: May 18, 2021
 * Copyright (c) 2012 - 2021 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/universal.xml
 */
@@ -25385,8 +25385,8 @@ input.dx-hidden {
 
 /**
 * DevExpress Analytics (dist\css\dx-querybuilder.css)
-* Version:  21.1.4
-* Build date: Jun 22, 2021
+* Version:  21.1.3
+* Build date: May 18, 2021
 * Copyright (c) 2012 - 2021 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/universal.xml
 */
@@ -27198,8 +27198,8 @@ input.dx-hidden {
 
 /**
 * DevExpress Dashboard (dx-dashboard.light.min.css)
-* Version:  21.1.4
-* Build date: Jun 21, 2021
+* Version:  21.1.3
+* Build date: May 18, 2021
 * Copyright (c) 2012 - 2021 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/universal.xml
 */
