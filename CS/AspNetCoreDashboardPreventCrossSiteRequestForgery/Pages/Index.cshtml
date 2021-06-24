@@ -1,0 +1,17 @@
+﻿@page
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+
+
+<div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+@(Html.DevExpress().Dashboard("dashboardControl1")
+    .Width("100%")
+    .Height("100%")
+    .OnBeforeRender("onBeforeRender")
+    .ControllerName("CustomDashboard")
+    .BackendOptions(backendOptions => {
+        backendOptions.RequestHttpHeaders(headers => {
+            headers.Add("X-CSRF-TOKEN", Xsrf.GetAndStoreTokens(HttpContext).RequestToken);
+        });
+    })
+)
+</div>
