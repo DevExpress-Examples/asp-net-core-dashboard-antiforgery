@@ -7,6 +7,74 @@
 
 The following example shows how to apply antiforgery request validation to the ASP.NET Core Dashboard control.
 
+## Example Overview
+
+Follow the steps below to apply antiforgery request validation.
+
+### Create custom dashboard controller
+1. Add a custom dashboard controller.
+
+```cs
+namespace AspNetCoreDashboardPreventCrossSiteRequestForgery.Controllers {
+    public class CustomDashboardController : DashboardController     {
+        public CustomDashboardController(DashboardConfigurator configurator, IDataProtectionProvider dataProtectionProvider = null): base(configurator, dataProtectionProvider) { 
+        }
+    }
+}
+```
+
+
+1. Change default routing.
+
+```cs
+EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "CustomDashboard");
+```
+
+1. Specify the controller name.
+
+```razor
+@(Html.DevExpress().Dashboard("dashboardControl1")
+     ...
+    .ControllerName("CustomDashboard")
+)
+```
+
+
+###  Add validation for AntiforgeryToken
+1. Add Antiforgery service.
+
+```cs
+ services.AddAntiforgery(options => {
+	// Use CookieBuilder to set Cookie properties.
+	options.FormFieldName = "X-CSRF-TOKEN";
+	options.HeaderName = "X-CSRF-TOKEN";
+	options.SuppressXFrameOptionsHeader = false;
+});
+```
+
+1. Add the AutoValidateAntiforgeryToken attribute to custom controller.
+
+```cs
+[AutoValidateAntiforgeryToken]
+public class CustomDashboardController : DashboardController {
+	// ...
+}
+```
+
+1. Configure the Web Dashboard control.
+
+```razor
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+ 
+@(Html.DevExpress().Dashboard("dashboardControl1")
+   ...
+    .BackendOptions(backendOptions => {
+        backendOptions.RequestHttpHeaders(headers => {
+            headers.Add("X-CSRF-TOKEN", Xsrf.GetAndStoreTokens(HttpContext).RequestToken);
+        });
+    })
+)
+```
 
 ## Documentation
 
