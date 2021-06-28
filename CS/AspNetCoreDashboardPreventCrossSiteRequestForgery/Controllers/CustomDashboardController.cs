@@ -7,13 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AspNetCoreDashboardPreventCrossSiteRequestForgery.Controllers
-{
+namespace AspNetCoreDashboardPreventCrossSiteRequestForgery.Controllers {
     [AutoValidateAntiforgeryToken]
-    public class CustomDashboardController : DashboardController
-    {
+    public class CustomDashboardController : DashboardController {
         public CustomDashboardController(CustomDashboardConfigurator configurator, IDataProtectionProvider dataProtectionProvider = null): base(configurator, dataProtectionProvider) { 
         }
-
     }    
 }
