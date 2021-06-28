@@ -4,7 +4,7 @@
 * [CustomDashboardController.cs](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Controllers/CustomDashboardController.cs)
 * [Index.cshtml](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Pages/Index.cshtml)
 * [Startup.cs](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Startup.cs)
-* 
+
 <!-- default file list end -->
 # ASP.NET Core Dashboard - How to Prevent Cross-Site Request Forgery (CSRF) Attacks
 
