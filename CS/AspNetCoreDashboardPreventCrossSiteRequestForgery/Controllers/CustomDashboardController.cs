@@ -12,7 +12,7 @@ namespace AspNetCoreDashboardPreventCrossSiteRequestForgery.Controllers
     [AutoValidateAntiforgeryToken]
     public class CustomDashboardController : DashboardController
     {
-        public CustomDashboardController(DashboardConfigurator configurator, IDataProtectionProvider dataProtectionProvider = null): base(configurator, dataProtectionProvider) { 
+        public CustomDashboardController(CustomDashboardConfigurator configurator, IDataProtectionProvider dataProtectionProvider = null): base(configurator, dataProtectionProvider) { 
         }
 
     }    
