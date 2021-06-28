@@ -91,4 +91,4 @@ public class CustomDashboardController : DashboardController {
 
 ## More Examples
 
-- [ASP.NET MVC Dashboard - How to Prevent Cross-Site Request Forgery (CSRF) Attacks](https://github.com/natakazakova/asp-net-mvc-dashboard-antiforgery)
+- [ASP.NET MVC Dashboard - How to Prevent Cross-Site Request Forgery (CSRF) Attacks](https://github.com/DevExpress-Examples/asp-net-mvc-dashboard-antiforgery)
