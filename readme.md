@@ -44,7 +44,7 @@ EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "
 
 
 ###  Add validation for AntiforgeryToken
-1. Add the Antiforgery service.
+1. Add the `Antiforgery` service.
 
 ```cs
  services.AddAntiforgery(options => {
@@ -55,7 +55,7 @@ EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "
 });
 ```
 
-2. Add the AutoValidateAntiforgeryToken attribute to the custom controller.
+2. Add the `AutoValidateAntiforgeryToken` attribute to the custom controller.
 
 ```cs
 [AutoValidateAntiforgeryToken]
