@@ -24,13 +24,13 @@ namespace AspNetCoreDashboardPreventCrossSiteRequestForgery.Controllers {
 ```
 
 
-1. Change default routing.
+2. Change default routing.
 
 ```cs
 EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "CustomDashboard");
 ```
 
-1. Specify the controller name.
+3. Specify the controller name.
 
 ```razor
 @(Html.DevExpress().Dashboard("dashboardControl1")
@@ -41,7 +41,7 @@ EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "
 
 
 ###  Add validation for AntiforgeryToken
-1. Add Antiforgery service.
+1. Add the Antiforgery service.
 
 ```cs
  services.AddAntiforgery(options => {
@@ -52,7 +52,7 @@ EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "
 });
 ```
 
-1. Add the AutoValidateAntiforgeryToken attribute to custom controller.
+2. Add the AutoValidateAntiforgeryToken attribute to the custom controller.
 
 ```cs
 [AutoValidateAntiforgeryToken]
@@ -61,7 +61,7 @@ public class CustomDashboardController : DashboardController {
 }
 ```
 
-1. Configure the Web Dashboard control.
+3. Configure the Web Dashboard control's backend options.
 
 ```razor
 @inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
