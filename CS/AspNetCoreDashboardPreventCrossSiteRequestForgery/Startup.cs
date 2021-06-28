@@ -67,8 +67,7 @@ namespace AspNetCoreDashboardPreventCrossSiteRequestForgery {
                     };
                 });
 
-            services.AddAntiforgery(options =>
-            {
+            services.AddAntiforgery(options => {
                 // Set Cookie properties using CookieBuilder properties†.
                 options.FormFieldName = "X-CSRF-TOKEN";
                 options.HeaderName = "X-CSRF-TOKEN";
