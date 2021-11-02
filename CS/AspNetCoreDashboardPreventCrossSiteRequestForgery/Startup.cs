@@ -1,4 +1,4 @@
-﻿using DevExpress.AspNetCore;
+using DevExpress.AspNetCore;
 using DevExpress.DashboardAspNetCore;
 using DevExpress.DashboardCommon;
 using DevExpress.DashboardWeb;
@@ -6,10 +6,12 @@ using DevExpress.DataAccess.Excel;
 using DevExpress.DataAccess.Sql;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
+using System.Linq;
 
 namespace AspNetCoreDashboardPreventCrossSiteRequestForgery {
     public class Startup {
