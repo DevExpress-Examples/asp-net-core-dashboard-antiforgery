@@ -22,7 +22,13 @@ namespace AspNetCoreDashboardPreventCrossSiteRequestForgery {
         public void ConfigureServices(IServiceCollection services) {
             services
                 .AddResponseCompression()
-                .AddMvc();
+                .AddMvc()
+                .ConfigureApplicationPartManager((manager) => {
+                    var dashboardApplicationParts = manager.ApplicationParts.Where(part => part is AssemblyPart && ((AssemblyPart)part).Assembly == typeof(DashboardController).Assembly).ToList();
+                    foreach (var partToRemove in dashboardApplicationParts) {
+                        manager.ApplicationParts.Remove(partToRemove);
+                    }
+                });
 
             services
                 .AddDevExpressControls()

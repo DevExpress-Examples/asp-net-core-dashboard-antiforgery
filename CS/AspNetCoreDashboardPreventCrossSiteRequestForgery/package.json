@@ -2,10 +2,10 @@
     "name": "aspnetcoredashboardpreventcrosssiterequestforgery",
     "version": "1.0.0",
     "private": true,
-    "dependencies": {
-        "@devexpress/analytics-core": "21.1.3",
-        "devexpress-dashboard": "21.1.3",
-        "devextreme": "21.1.3",
-        "jquery-ui-dist": "^1.12.1"
-    }
+  "dependencies": {
+    "@devexpress/analytics-core": "21.1-stable",
+    "devexpress-dashboard": "21.1-stable",
+    "devextreme": "21.1-stable",
+    "jquery-ui-dist": "^1.12.1"
+  }
 }
