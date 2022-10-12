@@ -7,15 +7,6 @@
 
 The following example shows how to apply antiforgery request validation to the ASP.NET Core Dashboard control.
 
-<!-- default file list -->
-## Files to Look At
-
-* [CustomDashboardController.cs](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Controllers/CustomDashboardController.cs)
-* [Index.cshtml](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Pages/Index.cshtml)
-* [Startup.cs](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Startup.cs)
-
-<!-- default file list end -->
-
 ## Example Overview
 
 Follow the steps below to apply antiforgery request validation.
@@ -88,6 +79,12 @@ public class CustomDashboardController : DashboardController {
     })
 )
 ```
+
+## Files to Review
+
+* [CustomDashboardController.cs](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Controllers/CustomDashboardController.cs)
+* [Index.cshtml](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Pages/Index.cshtml)
+* [Startup.cs](./CS/AspNetCoreDashboardPreventCrossSiteRequestForgery/Startup.cs)
 
 ## Documentation
 
