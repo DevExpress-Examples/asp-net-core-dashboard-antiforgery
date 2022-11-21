@@ -59,7 +59,7 @@ namespace AspNetCoreDashboardPreventCrossSiteRequestForgery {
 
             app.UseRouting();
             app.UseEndpoints(endpoints => {
-                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "CustomDashboard");
+                endpoints.MapDashboardRoute("dashboardControl", "CustomDashboard");
                 endpoints.MapRazorPages();
                 endpoints.MapControllerRoute(
                     name: "default",
