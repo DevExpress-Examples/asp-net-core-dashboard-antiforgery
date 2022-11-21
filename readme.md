@@ -28,7 +28,7 @@ namespace AspNetCoreDashboardPreventCrossSiteRequestForgery.Controllers {
 
 ```cs
 app.UseEndpoints(endpoints => {
-	EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "dashboardControl", "CustomDashboard");
+	endpoints.MapDashboardRoute("dashboardControl", "CustomDashboard");
 	// ...
 });
 ```
