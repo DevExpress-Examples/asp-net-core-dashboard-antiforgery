@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # ASP.NET Core Dashboard - How to Prevent Cross-Site Request Forgery (CSRF) Attacks
 
-The following example shows how to apply antiforgery request validation to the ASP.NET Core Dashboard control.
+The following example applies antiforgery request validation to the DevExpress ASP.NET Core Dashboard control.
 
 ## Example Overview
 
